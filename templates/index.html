@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Proxy Debugger</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #09121f;
+            color: white;
+        }
+        th, td {
+            border: 1px solid gray;
+            max-width: 1000px;
+            word-wrap: break-word;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: monospace;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<h1>Reverse Proxy Debugger</h1>
+<h2>Request Information</h2>
+<ul>
+    <li>URL: {{ nice.url }}</li>
+    <li>Method: {{ nice.method }}</li>
+    <li>Path: {{ nice.path }}</li>
+    <li>Query parameters: {{ nice.query_string }}</li>
+    <li>Request from IP: {{ nice.remote_addr }}</li>
+    <li>Request from port: {{ nice.remote_port }}</li>
+</ul>
+<h3>Headers</h3>
+
+<table>
+    <thead>
+    <tr>
+        <th>Header</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for header in nice.headers %}
+        <tr>
+            <td>{{ header }}</td>
+            <td>{{ nice.headers[header] }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<h3>Body</h3>
+<h4>Attempted Formatting</h4>
+<p>{{ nice.formatted_body }}</p>
+<h4>Raw</h4>
+<p>{{ nice.raw_body }}</p>
+
+<h2>Raw Data</h2>
+<p>{{ raw }}</p>
+</body>
+</html>
