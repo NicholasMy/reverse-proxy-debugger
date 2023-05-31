@@ -18,3 +18,11 @@ A web application that shows the raw request it receives to help debug reverse p
 ## Output
 The request details are displayed in the browser AND logged to stdout.
 Use `docker compose logs -f` to view the live output.
+
+## Screenshots
+
+![image](https://github.com/NicholasMy/reverse-proxy-debugger/assets/32116122/be97ea3e-b793-452c-8daf-5d1aa42b27df)
+
+![image](https://github.com/NicholasMy/reverse-proxy-debugger/assets/32116122/31593594-9ce4-4ee1-ae24-272e9012d887)
+
+![image](https://github.com/NicholasMy/reverse-proxy-debugger/assets/32116122/f67abee8-342b-47f2-be5a-342118863f1b)
