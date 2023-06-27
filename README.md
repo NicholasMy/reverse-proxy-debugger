@@ -20,9 +20,8 @@ The request details are displayed in the browser AND logged to stdout.
 Use `docker compose logs -f` to view the live output.
 
 ## Screenshots
+![Screenshot from 2023-05-31 10-51-33](https://github.com/NicholasMy/reverse-proxy-debugger/assets/32116122/226df83c-2766-4f33-b397-2af2368babff)
 
-![image](https://github.com/NicholasMy/reverse-proxy-debugger/assets/32116122/be97ea3e-b793-452c-8daf-5d1aa42b27df)
+![Screenshot from 2023-05-31 10-54-09](https://github.com/NicholasMy/reverse-proxy-debugger/assets/32116122/08446f0c-103a-4743-b712-1917674ab4ec)
 
-![image](https://github.com/NicholasMy/reverse-proxy-debugger/assets/32116122/31593594-9ce4-4ee1-ae24-272e9012d887)
-
-![image](https://github.com/NicholasMy/reverse-proxy-debugger/assets/32116122/f67abee8-342b-47f2-be5a-342118863f1b)
+![Screenshot from 2023-05-31 10-58-18](https://github.com/NicholasMy/reverse-proxy-debugger/assets/32116122/bc98d6d3-1abb-47d9-b55a-f73936f7dffd)
