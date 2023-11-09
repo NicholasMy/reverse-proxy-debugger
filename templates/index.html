@@ -2,28 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Reverse Proxy Debugger</title>
+    <title>Nicholas' Reverse Proxy Debugger</title>
     <style>
         body {
             font-family: sans-serif;
             background-color: #09121f;
             color: white;
+            margin: 0;
+            padding: 10px 30px 30px;
         }
+
         th, td {
-            border: 1px solid gray;
+            border: 1px solid grey;
             max-width: 1000px;
             word-wrap: break-word;
             padding-left: 10px;
             padding-right: 10px;
             font-family: monospace;
         }
+
         table {
             border-collapse: collapse;
         }
     </style>
 </head>
 <body>
-<h1>Reverse Proxy Debugger</h1>
+<h1>Nicholas' Reverse Proxy Debugger</h1>
+<p>By <a href="https://nicholasmy.com" target="_blank">Nicholas Myers</a> | <a
+        href="https://github.com/NicholasMy/reverse-proxy-debugger" target="_blank">Source</a></p>
 <h2>Request Information</h2>
 <ul>
     <li>URL: {{ nice.url }}</li>
